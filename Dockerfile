@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
+FROM microsoft/dotnet:6.0.302-sdk AS build
 WORKDIR /App
 COPY *.csproj ./
 # RUN dotnet restore
